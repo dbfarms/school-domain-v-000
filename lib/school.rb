@@ -24,7 +24,7 @@ class School
     @roster.each do |r|
       array = r[1]
       array.sort_by! {|b| b.downcase}
-      return array
     end
+    return @roster
   end
 end
