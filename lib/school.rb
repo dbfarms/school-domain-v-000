@@ -8,14 +8,14 @@ class School
     @roster = {}
   end
 
-  def add_student(student, grade)
-    if @roster[grade] == nil
-      @roster[grade] = []
+  def add_student(student, grade_of_student)
+    if @roster[grade_of_student] == nil
+      @roster[grade_of_student] = []
     end
-    @roster[grade] << student
+    @roster[grade_of_student] << student
   end
 
-  def grade
-
+  def grade(grade_roster)
+    return roster[grade_roster]
   end
 end
