@@ -18,4 +18,15 @@ class School
   def grade(grade_roster)
     return roster[grade_roster]
   end
+
+  def sort
+    @roster.each do |r|
+      array = r[1]
+      array.sort_by! {|b| b.downcase}
+      return array 
+    end
+  end
 end
+
+
+
